@@ -1,0 +1,38 @@
+
+
+<div>
+    <div class="align-container">
+        <md-button class="md-raised md-primary" ng-click="vm.setTextAlign('left')">
+            <i class="fa fa-align-left"></i>
+        </md-button>
+        <md-button class="md-raised md-primary" ng-click="vm.setTextAlign('center')">
+            <i class="fa fa-align-center"></i>
+        </md-button>
+
+        <md-button class="md-raised md-primary" ng-click="vm.setTextAlign('right')">
+            <i class="fa fa-align-right"></i>
+        </md-button>
+
+        <md-input-container flex>
+            <label>Text</label>
+            <textarea ng-model="vm.selectedElement.element.value" columns="1" md-maxlength="150"></textarea>
+        </md-input-container>
+    </div>
+
+
+    <input ng-model="vm.selectedElement.element.fontSize" type="number">
+    <md-button class="md-raised md-warn" ng-click="vm.removeElement()">
+        <i class="fa fa-trash-o"></i>
+    </md-button>
+
+    <md-input-container flex>
+        <label>Background Color</label>
+        <input colorpicker ng-model="vm.selectedElement.element.backgroundColor" type="text">
+    </md-input-container>
+
+    <md-input-container flex>
+        <label>Text Color</label>
+        <input colorpicker ng-model="vm.selectedElement.element.color" type="text">
+    </md-input-container>
+
+</div>

@@ -1,0 +1,35 @@
+<md-dialog aria-label="Mango (Fruit)" ng-controller="ImageLibrary as vm">
+    <form class="image-library">
+
+        <md-dialog-content class="sticky-container">
+            <md-subheader class="md-sticky-no-effect">Images</md-subheader>
+            <div>
+                <ul class="image-list">
+                    <li class="image" ng-repeat="image in vm.images"
+                        ng-style="vm.isImageSelected(image)"
+                        ng-click="vm.setImageSelected(image)">
+                        <img ng-src="{{image}}">
+                    </li>
+                </ul>
+            </div>
+        </md-dialog-content>
+
+        <div class="md-actions" layout="row">
+            <span flex></span>
+            <md-button ng-click="answer('not useful')" class="md-raised md-warn md-button md-default-theme">
+                Close
+            </md-button>
+            <md-button class="md-raised md-primary md-button md-default-theme"
+                       ng-click="vm.addImageToPresentation()"
+                       ng-disabled="vm.isAddEnable()">
+                Add Image
+            </md-button>
+            <md-button class="md-raised md-primary md-button md-default-theme"
+                       ng-click="vm.setBackground()"
+                       ng-disabled="vm.isAddEnable()">
+                Set As Background
+            </md-button>
+        </div>
+
+    </form>
+</md-dialog>

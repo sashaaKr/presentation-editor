@@ -1,0 +1,61 @@
+<div ng-controller="Menu as vm">
+
+    <div class="sidebar">
+        <ul class="menuList">
+            <li>
+                <md-button class="md-raised md-primary menuBtn"
+                           ng-click="vm.addText()">
+                    <span class="textIconContainer">
+                        <i class="fa fa-text-height menuIcon"></i>
+                        <!--<md-tooltip>-->
+                            <!--Add paragraph-->
+                        <!--</md-tooltip>-->
+                    </span>
+                </md-button>
+            </li>
+            <li>
+                <md-button class="md-raised md-primary menuBtn"
+                           ng-click="vm.showImagePopUpLib()">
+                    <i class="fa fa-picture-o menuIcon"></i>
+                    <!--<md-tooltip>-->
+                    <!--Add Image-->
+                    <!--</md-tooltip>-->
+                </md-button>
+            </li>
+            <li>
+                <md-button class="md-raised md-primary menuBtn"
+                           ng-click="vm.addIframe()">
+                    <i class="fa fa-newspaper-o menuIcon"></i>
+                    <!--<md-tooltip>-->
+                    <!--Add Image-->
+                    <!--</md-tooltip>-->
+                </md-button>
+            </li>
+            <li>
+                <md-button class="md-raised md-primary menuBtn"
+                           ng-click="vm.addSlide()">
+                    <i class="fa fa-plus menuIcon"></i>
+                    <!--<md-tooltip>-->
+                    <!--Add slide-->
+                    <!--</md-tooltip>-->
+                </md-button>
+            </li>
+            <li>
+                <md-button class="md-raised md-warn menuBtn"
+                           ng-disabled="vm.isDeleteSlideDisable()"
+                           ng-click="vm.removeSlide()">
+                    <i class="fa fa-minus menuIcon"></i>
+                    <!--<md-tooltip>-->
+                    <!--Remove Slide-->
+                    <!--</md-tooltip>-->
+                </md-button>
+            </li>
+        </ul>
+    </div>
+
+        <div class="elementSettings animated"
+             ng-show="vm.selectedElement.element.type">
+            <ng-include src="vm.getSettingsPath()"></ng-include>
+        </div>
+
+</div>

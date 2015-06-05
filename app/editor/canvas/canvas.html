@@ -1,0 +1,26 @@
+<div ng-controller="Canvas as vm">
+
+    <div class="canvasContainer">
+
+        <div class="presCanvas md-whiteframe-z2" ng-style="vm.getCanvasStyle()">
+
+            <div class="slideElem"
+                 ng-repeat="element in vm.currentSelectedSlide.slide.elements"
+                 ng-style="vm.getElementStyle(element)"
+                 element="element"
+                 pe-element
+                 pe-element-draggable
+                 pe-element-clickable
+                 pe-element-resizable>
+
+                <ng-include src="vm.elementTemplatePath(element)"></ng-include>
+
+            </div>
+
+        </div>
+    </div>
+
+    <pe-presentation-pagination presentation-slides="vm.slides" curr-slide-index="vm.currSlideIndex"/>
+
+</div>
+
