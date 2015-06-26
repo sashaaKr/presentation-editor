@@ -1,0 +1,115 @@
+/* Canvas
+*********************************************************************************************************************/
+.canvasContainer{
+    /*margin: 10% auto;*/
+    /*width: 800px;*/
+    /*height: 500px;*/
+}
+    .presCanvas {
+        /*border: 1px solid #000000;*/
+        /*position: relative;*/
+        /*width: 800px;*/
+        /*height: 500px;*/
+    }
+        .presCanvas .slideElem {
+            /*position: absolute;*/
+        }
+            /*.ui-resizable-handle {*/
+                /*position: absolute;*/
+                /*font-size: 0.1px;*/
+                /*display: block;*/
+                /*touch-action: none;*/
+            /*}*/
+            /*.ui-resizable-e {*/
+                /*cursor: e-resize;*/
+                /*width: 7px;*/
+                /*right: -5px;*/
+                /*top: 0;*/
+                /*height: 100%;*/
+            /*}*/
+            /*.ui-resizable-s {*/
+                /*cursor: s-resize;*/
+                /*height: 7px;*/
+                /*width: 100%;*/
+                /*bottom: -5px;*/
+                /*left: 0;*/
+            /*}*/
+            /*.iframe-wrapper{*/
+                /*width: 100%;*/
+                /*height: 100%;*/
+            /*}*/
+                /*iframe{*/
+                    /*width: 100%;*/
+                    /*height: 100%;*/
+                /*}*/
+                /*.iframeOverlay{*/
+                    /*position: absolute;*/
+                    /*width: 100%;*/
+                    /*height: 100%;*/
+                    /*top: 0;*/
+                /*}*/
+
+/*.textBox {*/
+     /*border: 1px solid #000000;*/
+     /*height: 100%;*/
+ /*}*/
+
+/*.pagination{*/
+    /*margin: 0 auto;*/
+    /*width: 20%;*/
+/*}*/
+
+/* Menu
+*********************************************************************************************************************/
+/*.sidebar {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 70px;*/
+    /*height: 100%;*/
+    /*background: #9E9E9E;*/
+/*}*/
+    .sidebar .menuList {
+        /*padding: 0;*/
+    }
+        .sidebar .menuList LI {
+            /*list-style: none;*/
+            /*padding-bottom: 5px;*/
+        }
+            .sidebar .menuList .menuBtn {
+                /*width: 70px;*/
+                /*height: 70px;*/
+            }
+                .menuList .md-primary .textIconContainer{
+                    /*overflow: hidden;*/
+                    /*width: 22px;*/
+                    /*display: inline-block;*/
+                }
+                .menuList .menuBtn .menuIcon{
+                    /*font-size: 30px;*/
+                }
+
+/*.elementSettings {*/
+    /*position: absolute;*/
+    /*left: 70px;*/
+    /*height: 100%;*/
+    /*top: 0;*/
+    /*background: #FFB2B2;*/
+    /*width: 15%;*/
+/*}*/
+
+
+
+
+/* Image-library
+*********************************************************************************************************************/
+
+
+
+
+/* Canvas
+*********************************************************************************************************************/
+.hp-container{
+    width: 120px;
+    margin: 10% auto;
+}
