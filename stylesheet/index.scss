@@ -64,6 +64,17 @@ Canvas
   width: 20%;
 }
 
+.hidden .text-size{
+//  visibility: hidden;
+  white-space: pre-wrap;
+  width: 18px;
+//  min-height: 36px;
+  word-wrap: break-word;
+  font-size: 13px;
+  .lbr{
+    line-height: 3px;
+  }
+}
 /*
 Menu
 *******************************************************************

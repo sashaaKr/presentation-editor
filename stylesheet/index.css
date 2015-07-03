@@ -51,6 +51,14 @@ Canvas
   margin: 0 auto;
   width: 20%; }
 
+.hidden .text-size {
+  white-space: pre-wrap;
+  width: 18px;
+  word-wrap: break-word;
+  font-size: 13px; }
+  .hidden .text-size .lbr {
+    line-height: 3px; }
+
 /*
 Menu
 *******************************************************************
